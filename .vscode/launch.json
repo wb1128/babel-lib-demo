@@ -5,6 +5,44 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "运行demo",
+            "program": "${workspaceFolder}/demo/index.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        },
+    {
+        "name": "运行type-template",
+        "program": "${workspaceFolder}/babel-lib/type-template.js",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "pwa-node"
+    },
+    {
+        "name": "plugin-preset",
+        "program": "${workspaceFolder}/plugin-preset/index.js",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "pwa-node"
+    },
+
+
+    {
+        "name": "babel/core",
+        "program": "${workspaceFolder}/babelCore/index.js",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "pwa-node"
+    },
+        {
             "name": "运行traverse",
             "program": "${workspaceFolder}/babel-lib/traverse.js",
             "request": "launch",

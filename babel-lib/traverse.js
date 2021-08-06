@@ -24,15 +24,23 @@ babelTraverse(ast, {
         // if (path.isBooleanLiteral()) {
         //     path.insertBefore(babelTypes.stringLiteral("abc"))
         // }
-        console.log(path, state)
+        // console.log(path, state)
+    },
+    Literal(path, state) {
+        console.log("Literal", path.isBooleanLiteral())
+        console.log("Literal", path.assertBooleanLiteral())
+        // if (path.isBooleanLiteral()) {
+        //     path.insertBefore(babelTypes.stringLiteral("abc"))
+        // }
+        // console.log(path, state)
     },
     FunctionDeclaration(path, state) {
-        console.log(path, state)
-        path.insertBefore(babelTypes.expressionStatement(babelTypes.stringLiteral("Because I'm easy come, easy go.")));
-        path.insertAfter(babelTypes.expressionStatement(babelTypes.stringLiteral("A little high, little low.")));
+        // console.log(path, state)
+        // path.insertBefore(babelTypes.stringLiteral("Because I'm easy come, easy go."));
+        // path.insertAfter(babelTypes.stringLiteral("A little high, little low."));
     },
     CallExpression(path, state) {
-        console.log(path, state)
+        // console.log(path, state)
     }
 })
 console.log(ast)
